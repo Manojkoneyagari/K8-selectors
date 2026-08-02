@@ -22,4 +22,4 @@ spec:
     
 
 #kubectl label node <nodename> env=production
-#kubectl het nodes --show-labels
+#kubectl get nodes --show-labels

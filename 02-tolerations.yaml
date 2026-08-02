@@ -12,16 +12,12 @@ spec:
     resources:
         requests:
           cpu: "100m"
-          memory: "128mi"
+          memory: "128Mi"
         limits:
           cpu: "150m"
-          memory: "200mi"
-
-  tolerations:
-    - key:
-      operator:
-      value:
-      effect:
-
+          memory: "200Mi"
   nodeSelector:
     purpose: selector
+
+
+    #kubectl taint node <nodename> <key>=<value>:<effect>

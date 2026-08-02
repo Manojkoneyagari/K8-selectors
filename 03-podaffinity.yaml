@@ -10,7 +10,7 @@ spec:
         nodeSelectorTerms:
         - matchExpressions:
           - key: instance
-            operator: In
+            operator: NotIn   #NotIn
             values:
             - node1
       
@@ -19,7 +19,7 @@ spec:
         preference:
           matchExpressions:
           - key: instance
-            operator: In
+            operator: In   #NotIn
             values:
             - node2
   

@@ -18,7 +18,7 @@ spec:
           memory: "200mi"
 
   nodeSelector:
-    purpose: selector
+    purpose: Selector
     
 
 #kubectl label node <nodename> env=production

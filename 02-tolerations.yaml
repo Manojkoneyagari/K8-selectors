@@ -16,8 +16,15 @@ spec:
         limits:
           cpu: "150m"
           memory: "200Mi"
+
+  tolerations:
+    - key: "graph"
+      operator: "Equal"
+      value: "node"
+      effect: "NoSchedule"
   nodeSelector:
     purpose: selector
 
 
     #kubectl taint node <nodename> <key>=<value>:<effect>
+    #kubectl taint node ip-192-168-55-199.ec2.internal graph=node:NoSchedule
